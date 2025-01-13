@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio d'Imran Coulibaly</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #6a0572, #2e86de);
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(to right, #6a0572, #2e86de);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #5d3a9b;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        .nav-button {
+            padding: 10px 20px;
+            background: linear-gradient(to right, #6a0572, #2e86de);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            transform: scale(1.1);
+            background: #c0e8f9;
+            color: #6a0572;
+        }
+
+        section {
+            padding: 40px 20px;
+            animation: slideIn 1.5s;
+        }
+
+        .section-title {
+            color: #c0e8f9;
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .about, .skills, .experience, .projects {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #5d3a9b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .image-placeholder {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-placeholder img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #6a0572;
+            border-radius: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .about, .skills, .experience, .projects {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio d'Imran Coulibaly ✨</h1>
+        <p>Étudiant passionné en informatique, IA, réseaux, et cybersécurité 🚀</p>
+    </header>
+
+    <nav>
+        <button class="nav-button" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">🔍 À propos</button>
+        <button class="nav-button" onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'});">🛠️ Compétences</button>
+        <button class="nav-button" onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'});">📚 Expérience</button>
+        <button class="nav-button" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'});">✨ Projets</button>
+    </nav>
+
+    <section id="about" class="about">
+        <h2 class="section-title">À propos 👤</h2>
+        <p>Je suis un étudiant en informatique passionné par l'IA, les réseaux, la cybersécurité, et un grand fan d'aviation ✈️. J'aime explorer ces domaines tout en développant mes compétences à travers divers projets.</p>
+        <div class="image-placeholder">
+            <img src="images/images.jpg" alt="Image à propos de moi">
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="section-title">Compétences 🛠️</h2>
+        <ul>
+            <li>Python 🐍</li>
+            <li>JavaScript (JS)</li>
+            <li>SQL / NoSQL</li>
+            <li>C#</li>
+            <li>Node.js</li>
+            <li>Windows Server / Client</li>
+            <li>Gestion de parc</li>
+            <li>Linux 🐧</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2 class="section-title">Expérience professionnelle 📚</h2>
+        <p><strong>Gestion de projet :</strong> Organisation du bal du lycée et spectacle de fin d'année 🎉.</p>
+        <ul>
+            <li>Recherche de financements 💸</li>
+            <li>Gestion des coûts 💼</li>
+            <li>Coordination avec une équipe de 10 personnes 🤝</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projets ✨</h2>
+        <div class="project">
+            <h3>Projet 1</h3>
+            <p>Description rapide d'un projet que tu as réalisé ou sur lequel tu travailles.</p>
+        </div>
+        <div class="project">
+            <h3>Projet 2</h3>
+            <p>Description rapide d'un autre projet pertinent.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portfolio d'Imran Coulibaly. Tous droits réservés. 🌟</p>
+    </footer>
+</body>
+</html>
